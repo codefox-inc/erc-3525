@@ -4,11 +4,10 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "../ERC3525Upgradeable.sol";
-import "../utils/StringConvertor.sol";
 
 contract ERC3525Mock is ERC3525Upgradeable {
 
-    using StringConvertor for uint256;
+    using Strings for uint256;
 
     /**
      * @notice Properties of the slot, which determine the value of slot.
